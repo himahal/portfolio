@@ -153,10 +153,6 @@ a {
     text-align: center;
 }
 
-#servicos {
-    padding: 5rem 0;
-}
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
