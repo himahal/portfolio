@@ -314,6 +314,77 @@ main {
 }
 
 /* ==========================================================================
+   EMPRESAS POR ONDE PASSEI (TRUSTED BY)
+   ========================================================================== */
+.companies-section {
+    width: 100%;
+    padding: 3.5rem 0;
+    background-color: rgba(11, 19, 38, 0.6);
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.companies-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    display: block;
+    opacity: 0.75;
+}
+
+.companies-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.company-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    min-width: 200px;
+    transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.company-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(160, 120, 255, 0.35);
+    background-color: var(--bg-card-alt);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 20px rgba(160, 120, 255, 0.1);
+}
+
+.company-logo {
+    max-height: 42px;
+    max-width: 160px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0.95) contrast(1.05);
+    transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.company-card:hover .company-logo {
+    filter: brightness(1) contrast(1);
+}
+
+.company-logo.logo-saobraz {
+    border-radius: 8px;
+    padding: 4px 10px;
+    background-color: #FFFFFF;
+}
+
+/* ==========================================================================
    SERVIÇOS ESPECIALIZADOS
    ========================================================================== */
 #servicos {
@@ -801,6 +872,20 @@ footer {
         bottom: 1rem;
         right: 1rem;
         font-size: 0.7rem;
+    }
+
+    .companies-section {
+        padding: 2.5rem 0;
+    }
+
+    .companies-grid {
+        gap: 1rem;
+    }
+
+    .company-card {
+        padding: 1rem 1.5rem;
+        height: 70px;
+        min-width: 140px;
     }
 
     .services-grid {
