@@ -4,212 +4,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Breno Pizolitto | Portfólio</title>
 </head>
 
 <body>
-    <header>
+    <header class="header-container">
         <a href="#" class="logo">Breno Pizolitto</a>
         <nav>
             <ul>
-                <li><a href="#hero">Sobre mim</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#hero" class="nav-link active">Sobre</a></li>
+                <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#contato" class="nav-link">Orçamento</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </nav>
-        <a href="#contato" class="btn btn-primary">Entre em contato</a>
+        <a href="#contato" class="btn btn-primary btn-header">Entre em contato!</a>
     </header>
+
     <main>
+        <!-- HERO SECTION -->
         <section id="hero">
-            <div class="hero-content">
-                <h1>Automação de Processos & Inteligência Artificial Aplicada</h1>
-                <p>Desenvolvo arquiteturas em Python para eliminar gargalos manuais e modelo sistemas no Notion para
-                    gestão de processos e equipes.</p>
-                <div class="hero-metrics">
-                    <div class="metric-card">
-                        <div class="metric-value">4+</div>
-                        <div class="metric-label">anos na Cactus Rockets</div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>Automação de Processos &amp; Inteligência Artificial Aplicada</h1>
+                    <p>Desenvolvo arquiteturas em Python para eliminar gargalos manuais e modelo sistemas no Notion para
+                        gestão de processos e equipes.</p>
+
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary">Explorar Projetos &rarr;</a>
+                        <a href="#contato" class="btn btn-outline">Falar Comigo</a>
                     </div>
-                    <div class="metric-card">
-                        <div class="metric-value">100%</div>
-                        <div class="metric-label">Pipelines com 100% de Auditoria Humana</div>
+
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <div class="metric-value">
+                                <span class="metric-icon">&#x2736;</span> 4+
+                            </div>
+                            <div class="metric-label">na Equipe Cactus Rockets</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">
+                                <span class="metric-icon">&#x2197;</span> 100%
+                            </div>
+                            <div class="metric-label">Pipelines com 100% de Auditoria Humana</div>
+                        </div>
                     </div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="#projetos" class="btn btn-primary">Explorar Projetos</a>
-                    <a href="#contato" class="btn btn-outline">Fale Comigo</a>
+
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <img src="assets/perfill.png" alt="Foto de perfil de Breno Pizolitto">
+                        <div class="badge-overlay">
+                            <span>Diretor @ Programa Feynman (UNIVASF)</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/perfill.png" alt="Foto de perfil">
             </div>
         </section>
+
+        <!-- SERVIÇOS ESPECIALIZADOS -->
         <section id="servicos">
-            <h2 class="section-title">Serviços Especializados</h2>
-            <p class="section-subtitle">Soluções completas para elevar o seu negócio.</p>
-            <div class="services-grid">
-                <article class="service-card">
-                    <span class="service-icon">[Raio]</span>
-                    <h3>Automação Web & Desktop</h3>
-                    <p>Desenvolvimento de robôs para extração de dados, tratamento de planilhas e eliminação de tarefas
-                        repetitivas.</p>
-                </article>
+            <div class="container">
+                <h2 class="section-title">Serviços Especializados</h2>
+                <p class="section-subtitle">Soluções completas para elevar o seu negócio.</p>
 
-                <article class="service-card">
-                    <span class="service-icon">[Equipe]</span>
-                    <h3>Arquitetura no Notion</h3>
-                    <p>Estruturação de workspaces operacionais para centralização de tarefas, projetos e documentação
-                        para pequenas equipes e profissionais.</p>
-                </article>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="586 1662 26 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M594 1689.5L595.25 1680.75H589L600.25 1664.5H602.75L601.5 1674.5H609L596.5 1689.5H594V1689.5"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3>Automação Web &amp; Desktop</h3>
+                        <p>Desenvolvimento de robôs para extração de dados, tratamento de planilhas e eliminação de
+                            tarefas
+                            repetitivas.</p>
+                    </article>
 
-                <article class="service-card">
-                    <span class="service-icon">[IA]</span>
-                    <h3>IA Aplicada com Rigor Técnico</h3>
-                    <p>Integração de LLMs (Gemini API) com AI Memory e contexto estruturado, mantendo revisão manual e
-                        validação estrita de cada linha de código.</p>
-                </article>
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="876 1664 34 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M879.25 1687V1683.5C879.25 1682.79 879.432 1682.14 879.797 1681.55C880.161 1680.95 880.646 1680.5 881.25 1680.19C882.542 1679.54 883.854 1679.06 885.188 1678.73C886.521 1678.41 887.875 1678.25 889.25 1678.25C890.625 1678.25 891.979 1678.41 893.312 1678.73C894.646 1679.06 895.958 1679.54 897.25 1680.19C897.854 1680.5 898.339 1680.95 898.703 1681.55C899.068 1682.14 899.25 1682.79 899.25 1683.5V1687H879.25V1687M901.75 1687V1683.25C901.75 1682.33 901.495 1681.45 900.984 1680.61C900.474 1679.77 899.75 1679.04 898.812 1678.44C899.875 1678.56 900.875 1678.78 901.812 1679.08C902.75 1679.38 903.625 1679.75 904.438 1680.19C905.188 1680.6 905.76 1681.07 906.156 1681.58C906.552 1682.09 906.75 1682.65 906.75 1683.25V1687H901.75V1687M889.25 1677C887.875 1677 886.698 1676.51 885.719 1675.53C884.74 1674.55 884.25 1673.38 884.25 1672C884.25 1670.62 884.74 1669.45 885.719 1668.47C886.698 1667.49 887.875 1667 889.25 1667C890.625 1667 891.802 1667.49 892.781 1668.47C893.76 1669.45 894.25 1670.62 894.25 1672C894.25 1673.38 893.76 1674.55 892.781 1675.53C891.802 1676.51 890.625 1677 889.25 1677V1677M901.75 1672C901.75 1673.38 901.26 1674.55 900.281 1675.53C899.302 1676.51 898.125 1677 896.75 1677C896.521 1677 896.229 1676.97 895.875 1676.92C895.521 1676.87 895.229 1676.81 895 1676.75C895.562 1676.08 895.995 1675.34 896.297 1674.53C896.599 1673.72 896.75 1672.88 896.75 1672C896.75 1671.12 896.599 1670.28 896.297 1669.47C895.995 1668.66 895.562 1667.92 895 1667.25C895.292 1667.15 895.583 1667.08 895.875 1667.05C896.167 1667.02 896.458 1667 896.75 1667C898.125 1667 899.302 1667.49 900.281 1668.47C901.26 1669.45 901.75 1670.62 901.75 1672V1672"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3>Arquitetura no Notion</h3>
+                        <p>Estruturação de workspaces operacionais para centralização de tarefas, projetos e
+                            documentação
+                            para pequenas equipes e profissionais.</p>
+                    </article>
 
-                <article class="service-card">
-                    <span class="service-icon">[Comunicação]</span>
-                    <h3>Comunicação & Workshops</h3>
-                    <p>Treinamentos e palestras que traduzem conceitos complexos de engenharia e tecnologia para
-                        linguagem simples e acessível.</p>
-                </article>
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="1170 1660 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1195.75 1673.25L1194.19 1669.81L1190.75 1668.25L1194.19 1666.69L1195.75 1663.25L1197.31 1666.69L1200.75 1668.25L1197.31 1669.81L1195.75 1673.25V1673.25M1195.75 1690.75L1194.19 1687.31L1190.75 1685.75L1194.19 1684.19L1195.75 1680.75L1197.31 1684.19L1200.75 1685.75L1197.31 1687.31L1195.75 1690.75V1690.75M1183.25 1687L1180.12 1680.12L1173.25 1677L1180.12 1673.88L1183.25 1667L1186.38 1673.88L1193.25 1677L1186.38 1680.12L1183.25 1687V1687"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3>IA Aplicada com Rigor Técnico</h3>
+                        <p>Integração de LLMs (Gemini API) com AI Memory e contexto estruturado, mantendo revisão manual
+                            e
+                            validação estrita de cada linha de código.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="1466 1663 30 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1479.75 1688.25V1685.75H1489.75V1685.75V1685.75V1676.88C1489.75 1674.44 1488.9 1672.37 1487.2 1670.67C1485.51 1668.97 1483.44 1668.12 1481 1668.12C1478.56 1668.12 1476.49 1668.97 1474.8 1670.67C1473.1 1672.37 1472.25 1674.44 1472.25 1676.88V1684.5H1471C1470.31 1684.5 1469.72 1684.26 1469.23 1683.77C1468.74 1683.28 1468.5 1682.69 1468.5 1682V1679.5C1468.5 1679.06 1468.61 1678.65 1468.83 1678.27C1469.05 1677.88 1469.35 1677.57 1469.75 1677.34L1469.84 1675.69C1470.01 1674.27 1470.42 1672.96 1471.08 1671.75C1471.73 1670.54 1472.56 1669.49 1473.55 1668.59C1474.54 1667.7 1475.67 1667 1476.95 1666.5C1478.23 1666 1479.58 1665.75 1481 1665.75C1482.42 1665.75 1483.76 1666 1485.03 1666.5C1486.3 1667 1487.44 1667.69 1488.44 1668.58C1489.44 1669.46 1490.26 1670.51 1490.91 1671.72C1491.55 1672.93 1491.97 1674.24 1492.16 1675.66L1492.25 1677.28C1492.65 1677.47 1492.95 1677.75 1493.17 1678.12C1493.39 1678.5 1493.5 1678.9 1493.5 1679.31V1682.19C1493.5 1682.6 1493.39 1683 1493.17 1683.38C1492.95 1683.75 1492.65 1684.03 1492.25 1684.22V1685.75C1492.25 1686.44 1492.01 1687.03 1491.52 1687.52C1491.03 1688.01 1490.44 1688.25 1489.75 1688.25H1479.75V1688.25M1477.25 1679.5C1476.9 1679.5 1476.6 1679.38 1476.36 1679.14C1476.12 1678.9 1476 1678.6 1476 1678.25C1476 1677.9 1476.12 1677.6 1476.36 1677.36C1476.6 1677.12 1476.9 1677 1477.25 1677C1477.6 1677 1477.9 1677.12 1478.14 1677.36C1478.38 1677.6 1478.5 1677.9 1478.5 1678.25C1478.5 1678.6 1478.38 1678.9 1478.14 1679.14C1477.9 1679.38 1477.6 1679.5 1477.25 1679.5V1679.5M1484.75 1679.5C1484.4 1679.5 1484.1 1679.38 1483.86 1679.14C1483.62 1678.9 1483.5 1678.6 1483.5 1678.25C1483.5 1677.9 1483.62 1677.6 1483.86 1677.36C1484.1 1677.12 1484.4 1677 1484.75 1677C1485.1 1677 1485.4 1677.12 1485.64 1677.36C1485.88 1677.6 1486 1677.9 1486 1678.25C1486 1678.6 1485.88 1678.9 1485.64 1679.14C1485.4 1679.38 1485.1 1679.5 1484.75 1679.5V1679.5M1473.53 1677.56C1473.39 1675.35 1474.05 1673.46 1475.53 1671.88C1477.01 1670.29 1478.85 1669.5 1481.06 1669.5C1482.92 1669.5 1484.55 1670.09 1485.95 1671.27C1487.36 1672.44 1488.21 1673.95 1488.5 1675.78C1486.6 1675.76 1484.86 1675.25 1483.27 1674.25C1481.67 1673.25 1480.45 1671.9 1479.59 1670.19C1479.26 1671.85 1478.56 1673.34 1477.48 1674.64C1476.41 1675.94 1475.09 1676.92 1473.53 1677.56V1677.56"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                        <h3>Comunicação &amp; Workshops</h3>
+                        <p>Treinamentos e palestras que traduzem conceitos complexos de engenharia e tecnologia para
+                            linguagem simples e acessível.</p>
+                    </article>
+                </div>
             </div>
         </section>
+
         <!-- PROJETOS EM DESTAQUE -->
         <section id="projetos">
-            <div class="section-header">
-                <h2 class="section-title">PROJETOS EM DESTAQUE</h2>
-                <a href="#" class="view-all-link">VIEW ALL PROJECTS &rarr;</a>
-            </div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">PROJETOS EM DESTAQUE</h2>
+                    <a href="#" class="view-all-link">VER TODOS OS PROJETOS &rarr;</a>
+                </div>
 
-            <div class="projects-grid">
-                <article class="project-card">
-                    <span class="project-number">01</span>
-                    <div class="project-preview">
-                        <img src="assets/project-placeholder.png" alt="Preview Brandix Studio">
-                    </div>
-                    <div class="project-info">
-                        <div>
-                            <h3>BRANDIX STUDIO</h3>
-                            <p>Web Design & Development</p>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <span class="project-number">01</span>
+                        <div class="project-preview">
+                            <img src="assets/project-placeholder.png" alt="Preview Brandix Studio">
                         </div>
-                        <a href="#" class="project-link" aria-label="Acessar Brandix Studio">&#x2197;</a>
-                    </div>
-                </article>
+                        <div class="project-info">
+                            <div>
+                                <h3>BRANDIX STUDIO</h3>
+                                <p>Web Design &amp; Development</p>
+                            </div>
+                            <a href="#" class="project-link" aria-label="Acessar Brandix Studio">&#x2197;</a>
+                        </div>
+                    </article>
 
-                <article class="project-card">
-                    <span class="project-number">02</span>
-                    <div class="project-preview">
-                        <img src="assets/project-placeholder.png" alt="Preview Taskly App">
-                    </div>
-                    <div class="project-info">
-                        <div>
-                            <h3>TASKLY APP</h3>
-                            <p>Dashboard Design & Development</p>
+                    <article class="project-card">
+                        <span class="project-number">02</span>
+                        <div class="project-preview">
+                            <img src="assets/project-placeholder.png" alt="Preview Taskly App">
                         </div>
-                        <a href="#" class="project-link" aria-label="Acessar Taskly App">&#x2197;</a>
-                    </div>
-                </article>
+                        <div class="project-info">
+                            <div>
+                                <h3>TASKLY APP</h3>
+                                <p>Dashboard Design &amp; Development</p>
+                            </div>
+                            <a href="#" class="project-link" aria-label="Acessar Taskly App">&#x2197;</a>
+                        </div>
+                    </article>
 
-                <article class="project-card">
-                    <span class="project-number">03</span>
-                    <div class="project-preview">
-                        <img src="assets/project-placeholder.png" alt="Preview Hosteria">
-                    </div>
-                    <div class="project-info">
-                        <div>
-                            <h3>HOSTERIA</h3>
-                            <p>Landing Page Design & Development</p>
+                    <article class="project-card">
+                        <span class="project-number">03</span>
+                        <div class="project-preview">
+                            <img src="assets/project-placeholder.png" alt="Preview Hosteria">
                         </div>
-                        <a href="#" class="project-link" aria-label="Acessar Hosteria">&#x2197;</a>
-                    </div>
-                </article>
+                        <div class="project-info">
+                            <div>
+                                <h3>HOSTERIA</h3>
+                                <p>Landing Page Design &amp; Development</p>
+                            </div>
+                            <a href="#" class="project-link" aria-label="Acessar Hosteria">&#x2197;</a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
         <!-- MEU TOOLKIT -->
         <section id="habilidades">
-            <h2 class="section-title">MEU TOOLKIT</h2>
+            <div class="container">
+                <h2 class="section-title">MEU TOOLKIT</h2>
 
-            <div class="toolkit-container">
-                <!-- Grade 4x2 com os itens -->
-                <div class="toolkit-grid">
-                    <div class="tool-item">
-                        <span class="tool-icon">[Python]</span>
-                        <span class="tool-name">Python</span>
+                <div class="toolkit-container">
+                    <!-- Grade 4x2 com os itens -->
+                    <div class="toolkit-grid-box">
+                        <div class="toolkit-grid">
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <img src="assets/python-icon.png" alt="Python">
+                                </div>
+                                <span class="tool-name">Python</span>
+                            </div>
+
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <img src="assets/selenium-icon.png" alt="Selenium">
+                                </div>
+                                <span class="tool-name">Selenium</span>
+                            </div>
+
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <img src="assets/pandas-icon.png" alt="Pandas">
+                                </div>
+                                <span class="tool-name">Pandas</span>
+                            </div>
+
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C12 6.627 6.627 12 0 12c6.627 0 12 5.373 12 12 0-6.627 5.373-12 12-12-6.627 0-12-5.373-12-12z" />
+                                    </svg>
+                                </div>
+                                <span class="tool-name">Gemini</span>
+                            </div>
+
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <img src="assets/notion-icon.png" alt="Notion">
+                                </div>
+                                <span class="tool-name">Notion</span>
+                            </div>
+
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17 2h4v20h-4V2zM10 8h4v14h-4V8zM3 14h4v8H3v-8z" />
+                                    </svg>
+                                </div>
+                                <span class="tool-name">PowerBI</span>
+                            </div>
+
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <img src="assets/linux-icon.png" alt="Linux">
+                                </div>
+                                <span class="tool-name">Linux</span>
+                            </div>
+
+                            <div class="tool-item">
+                                <div class="tool-icon">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                                    </svg>
+                                </div>
+                                <span class="tool-name">GitHub</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tool-item">
-                        <span class="tool-icon">[Selenium]</span>
-                        <span class="tool-name">Selenium</span>
-                    </div>
-                    <div class="tool-item">
-                        <span class="tool-icon">[Pandas]</span>
-                        <span class="tool-name">Pandas</span>
-                    </div>
-                    <div class="tool-item">
-                        <span class="tool-icon">[Gemini]</span>
-                        <span class="tool-name">Gemini</span>
-                    </div>
-                    <div class="tool-item">
-                        <span class="tool-icon">[Notion]</span>
-                        <span class="tool-name">Notion</span>
-                    </div>
-                    <div class="tool-item">
-                        <span class="tool-icon">[PowerBI]</span>
-                        <span class="tool-name">PowerBI</span>
-                    </div>
-                    <div class="tool-item">
-                        <span class="tool-icon">[Linux]</span>
-                        <span class="tool-name">Linux</span>
-                    </div>
-                    <div class="tool-item">
-                        <span class="tool-icon">[GitHub]</span>
-                        <span class="tool-name">GitHub</span>
-                    </div>
+
+                    <!-- Card de Destaque Lateral -->
+                    <aside class="toolkit-cta-card">
+                        <h3>VAMOS CONVERSAR?</h3>
+                        <p>Disponível para consultorias de automação, workspaces no Notion e palestras técnicas.</p>
+                        <a href="#contato" class="btn btn-dark">Entre em Contato &#x2197;</a>
+                    </aside>
                 </div>
-
-                <!-- Card de Destaque Lateral -->
-                <aside class="toolkit-cta-card">
-                    <h3>VAMOS CONVERSAR?</h3>
-                    <p>Disponível para consultorias de automação, workspaces no Notion e palestras técnicas.</p>
-                    <a href="#contato" class="btn btn-dark">Entre em Contato &#x2197;</a>
-                </aside>
             </div>
         </section>
 
         <!-- CONTATO / CTA FINAL -->
         <section id="contato">
-            <div class="contact-box">
-                <span class="eyebrow">VAMOS TRABALHAR JUNTOS</span>
-                <h2>Tem algum projeto em mente?</h2>
-                <p>Estou sempre aberto a discutir novos projetos e oportunidades. Vamos criar algo incrível juntos!</p>
-                <a href="mailto:pizolittobreno@gmail.com" class="btn btn-primary">Entre em contato &#x2197;</a>
+            <div class="container">
+                <div class="contact-box">
+                    <span class="eyebrow">VAMOS TRABALHAR JUNTOS</span>
+                    <h2>Tem algum projeto em mente?</h2>
+                    <p>Estou sempre aberto a discutir novos projetos e oportunidades. Vamos criar algo incrível juntos!
+                    </p>
+                    <a href="mailto:pizolittobreno@gmail.com" class="btn btn-primary">Entre em contato &#x2197;</a>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-top">
-            <span class="logo">Breno Pizolitto</span>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <div class="container">
+            <div class="footer-top">
+                <span class="logo">Breno Pizolitto</span>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+                <div class="footer-contact-info">
+                    <span>&#x2709; pizolittobreno@gmail.com</span>
+                    <span>&#x260E; +55 (74) 98854-6597</span>
+                </div>
             </div>
-            <div class="footer-contact-info">
-                <span>&#x2709; pizolittobreno@gmail.com</span>
-                <span>&#x260E; +55 (74) 98854-6597</span>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Breno Pizolitto. Todos os direitos reservados.</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Breno Pizolitto. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
