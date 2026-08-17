@@ -796,14 +796,16 @@ footer {
     font-size: 0.85rem;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-contact-info a {
     color: var(--text-muted);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.footer-links a:hover {
-    color: var(--text-main);
+.footer-links a:hover,
+.footer-contact-info a:hover {
+    color: var(--primary-light);
 }
 
 .footer-bottom {
